@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d34a3eb-27ea-4345-b408-12197e9b8c04" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/WWO/MyRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/WWO/MyWeather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/WWO/Weather.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/WWO/Astronomy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WWO/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WWO/Weather.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +26,11 @@
       <list>
         <option value="Gniewomir Kosiacki" />
       </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -80,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655222913842</updated>
-      <workItem from="1655222915274" duration="2393000" />
+      <workItem from="1655222915274" duration="3808000" />
     </task>
     <task id="LOCAL-00001" summary="Issue #1 - Create Project Maven structure">
       <created>1655224270901</created>
@@ -89,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655224270901</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Issue #2 - Connect with WWO API">
+      <created>1655225717829</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655225717829</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,7 +117,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Issue #1 - Create Project Maven structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Issue #1 - Create Project Maven structure" />
+    <MESSAGE value="Issue #2 - Connect with WWO API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Issue #2 - Connect with WWO API" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
