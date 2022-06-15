@@ -15,53 +15,45 @@ public class App {
         String city = "Cracow", num_of_days = "1";
         while (isRunning) {
             boolean showWeather = true;
-            System.out.printf("""
+            System.out.print("""
                     What would you like to do?
                              1. Choose a city
                              2. Write the geographical coordinates. 
                              3. See a weather for only today.
                              4. See a weather for more days.
-                             5. Look at the content of DataBase.
-                             6. Exit.
+                             5. Exit.
                     """);
             Scanner scan = new Scanner(System.in);
             String choice = scan.next();
             switch (choice) {
                 case "1":
-                    System.out.printf("For which city do you want to know weather for?\n");
-                    answer = new Scanner(System.in);
-                    city = answer.next();
+                    System.out.println("For which city do you want to know weather for?");
+                    city = scan.next();
                     break;
                 case "2":
-                    System.out.printf("Which location do you want to know weather for?\n");
-                    answer = new Scanner(System.in);
-                    city = answer.next();
+                    System.out.println("Which location do you want to know weather for?");
+                    city = scan.next();
                     break;
                 case "3":
                     num_of_days = "1";
                     break;
                 case "4":
-                    System.out.printf("For how many days do you want to know weather for?\n");
-                    answer = new Scanner(System.in);
-                    num_of_days = answer.next();
+                    System.out.println("For how many days do you want to know weather for?");
+                    num_of_days = scan.next();
                     try {
                         Integer.parseInt(num_of_days);
                     } catch (NumberFormatException e) {
-                        System.out.printf("I understand only numbers, please answer me again\n\n");
+                        System.out.println("I understand only numbers, please answer me again");
                         showWeather = false;
                     }
                     break;
                 case "5":
-                    System.out.println("Sorry, for the time being, database is empty.\n\n");
-                    showWeather = false;
-                    break;
-                case "6":
-                    System.out.printf("Bye, hope to see you soon");
+                    System.out.println("Bye, hope to see you soon");
                     showWeather = false;
                     isRunning = false;
                     break;
                 default:
-                    System.out.printf("I don't understand, please answer me again\n\n");
+                    System.out.println("I don't understand, please answer me again");
                     showWeather = false;
                     break;
             }
@@ -77,13 +69,15 @@ public class App {
                 try {
                     Response response = client.newCall(request).execute();
                     String string = response.body().string();
-                    MyRequest myResponse = new ObjectMapper().readValue(string, MyRequest.class);
-                    String body = new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(myResponse);
+                    ObjectMapper mapper = new ObjectMapper();
+                    MyRequest myResponse = mapper.readValue(string, MyRequest.class);
+                    String body = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(myResponse);
                     System.out.println(body);
 
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
+                scan.close();
             }
         }
     }
