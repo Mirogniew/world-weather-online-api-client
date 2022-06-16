@@ -1,31 +1,93 @@
 package org.example;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+import org.example.WWO.MyResponse;
 
 import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.logging.Logger;
 
-import okhttp3.*;
-import org.example.WWO.MyRequest;
+import static java.util.logging.Level.WARNING;
+import static kotlin.io.ConsoleKt.readLine;
+import static org.example.AppStatics.*;
 
 public class App {
-    public static void main(String[] args) {
-        OkHttpClient client = new OkHttpClient().newBuilder()
-                .build();
-        Request request = new Request.Builder()
-                .url("http://api.worldweatheronline.com/premium/v1/weather.ashx?key=0c172e455111440c9ee114013221206&q=Warsaw&num_of_days=1&tp=3&format=json")
-                .get()
-                .build();
-        try {
-            Response response = client.newCall(request).execute();
-            String string = response.body().string();
-            MyRequest myResponse = new ObjectMapper().readValue(string, MyRequest.class);
-            String body = new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(myResponse);
-            System.out.println(body);
+    private static final Logger logger = Logger.getLogger(App.class.getName());
 
-        } catch (IOException e) {
+    public static void main(String[] args) {
+        try (Scanner scan = new Scanner(System.in)) {
+            run(scan);
+        } catch (InputMismatchException e) {
+            logger.log(WARNING, "You should use only integers!");
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
+    }
 
+    private static void run(Scanner scan) {
+        String city = "";
+        int daysNumber;
+        int choice;
+        while (true) {
+            System.out.println(MENU_PLACE);
+            choice = scan.nextInt();
+            switch (choice) {
+                case 1 -> {
+                    System.out.println(CITY);
+                    city = scan.next();
+                }
+                case 2 -> {
+                    System.out.println();
+                    city = scan.next();
+                }
+                case 5 -> {
+                    System.out.println(EXIT_MESS);
+                    return;
+                }
+                default -> {
+                    System.out.println(WRONG_INPUT);
+                    continue;
+                }
+            }
+            System.out.println(MENU_TIME);
+            choice = scan.nextInt();
+            switch (choice) {
+                case 1 -> daysNumber = 1;
+                case 2 -> {
+                    System.out.println(MULTI_DAY);
+                    daysNumber = scan.nextInt();
+                }
+                case 5 -> {
+                    System.out.println(EXIT_MESS);
+                    return;
+                }
+                default -> {
+                    System.out.println(WRONG_INPUT);
+                    continue;
+                }
+            }
+            String response = sendRequest(city, daysNumber);
+            System.out.println(MyResponse.parseToResponseJson(response));
+            readLine();
+        }
+    }
+
+    private static String sendRequest(String city, int daysNumber) {
+        OkHttpClient client = new OkHttpClient().newBuilder().build();
+        try (Response response = client.newCall(getRequest(city, daysNumber)).execute()) {
+            return response.body().string();
+        } catch (IOException | NullPointerException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private static Request getRequest(String city, int daysNumber) {
+        return new Request.Builder()
+                .url(String.format(WWO_API_URL, city, daysNumber))
+                .get()
+                .build();
     }
 }
