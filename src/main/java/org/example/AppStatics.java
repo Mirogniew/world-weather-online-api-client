@@ -18,6 +18,7 @@ public class AppStatics {
                      5. Exit.
             """;
     public static final String CITY = "For which city do you want to know weather for?";
+    public static final String COORDINATE = "What are your coordinates?";
     public static final String WRONG_INPUT = "I don't understand, please answer me again";
     public static final String EXIT_MESS = "Bye, hope to see you soon";
     public static final String MULTI_DAY = "For how many days do you want to know weather for?";

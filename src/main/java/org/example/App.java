@@ -28,7 +28,7 @@ public class App {
     }
 
     private static void run(Scanner scan) {
-        String city = "";
+        String city;
         int daysNumber;
         int choice;
         while (true) {
@@ -40,7 +40,7 @@ public class App {
                     city = scan.next();
                 }
                 case 2 -> {
-                    System.out.println();
+                    System.out.println(COORDINATE);
                     city = scan.next();
                 }
                 case 5 -> {
@@ -71,7 +71,8 @@ public class App {
             }
             String response = sendRequest(city, daysNumber);
             System.out.println(MyResponse.parseToResponseJson(response));
-            readLine();
+            System.out.printf("%n%nPress any key to continue...");
+            scan.next();
         }
     }
 
