@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d34a3eb-27ea-4345-b408-12197e9b8c04" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/README" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AppStatics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AppStatics.java" afterDir="false" />
@@ -91,7 +92,9 @@
       <workItem from="1655222915274" duration="9518000" />
       <workItem from="1655296150721" duration="10347000" />
       <workItem from="1655393161902" duration="510000" />
-      <workItem from="1655405433430" duration="355000" />
+      <workItem from="1655405433430" duration="2028000" />
+      <workItem from="1655422379080" duration="6000" />
+      <workItem from="1655471150873" duration="2374000" />
     </task>
     <task id="LOCAL-00001" summary="Issue #1 - Create Project Maven structure">
       <created>1655224270901</created>
@@ -128,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655315976229</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Issue #4 - Create console MENU">
+      <created>1655406041868</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655406041868</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

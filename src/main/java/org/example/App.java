@@ -87,7 +87,7 @@ public class App {
 
     private static Request getRequest(String city, int daysNumber) {
         return new Request.Builder()
-                .url(String.format(WWO_API_URL, city, daysNumber))
+                .url(String.format(WWO_API_URL, KEY, city, daysNumber))
                 .get()
                 .build();
     }
