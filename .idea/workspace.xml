@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d34a3eb-27ea-4345-b408-12197e9b8c04" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AppStatics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AppStatics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README" beforeDir="false" afterPath="$PROJECT_DIR$/README" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +91,7 @@
       <workItem from="1655393161902" duration="510000" />
       <workItem from="1655405433430" duration="2028000" />
       <workItem from="1655422379080" duration="6000" />
-      <workItem from="1655471150873" duration="2374000" />
+      <workItem from="1655471150873" duration="3000000" />
     </task>
     <task id="LOCAL-00001" summary="Issue #1 - Create Project Maven structure">
       <created>1655224270901</created>
@@ -138,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655406041868</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="README added">
+      <created>1655473566056</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1655473566056</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +164,8 @@
     <MESSAGE value="Issue #2 - Connect with WWO API" />
     <MESSAGE value="Issue #3 - Implementation of WWO API response structure" />
     <MESSAGE value="Issue #4 - Create console MENU" />
-    <option name="LAST_COMMIT_MESSAGE" value="Issue #4 - Create console MENU" />
+    <MESSAGE value="README added" />
+    <option name="LAST_COMMIT_MESSAGE" value="README added" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
