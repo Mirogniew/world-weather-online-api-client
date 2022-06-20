@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d34a3eb-27ea-4345-b408-12197e9b8c04" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README" beforeDir="false" afterPath="$PROJECT_DIR$/README" afterDir="false" />
-    </list>
+    <list default="true" id="5d34a3eb-27ea-4345-b408-12197e9b8c04" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +89,7 @@
       <workItem from="1655393161902" duration="510000" />
       <workItem from="1655405433430" duration="2028000" />
       <workItem from="1655422379080" duration="6000" />
-      <workItem from="1655471150873" duration="3000000" />
+      <workItem from="1655471150873" duration="3602000" />
     </task>
     <task id="LOCAL-00001" summary="Issue #1 - Create Project Maven structure">
       <created>1655224270901</created>
@@ -142,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655473566056</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="README added">
+      <created>1655475534098</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1655475534098</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
