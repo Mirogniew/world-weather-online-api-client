@@ -47,5 +47,6 @@ How would you like to chose a place, for which you want to know the weather?
 ```
 App was written in JDK17.
 
-There is a possibility, that the access key will expire - if that's the case, new key may be found on "https://www.worldweatheronline.com/".
+There is a possibility, that the access key will expire - if that's the case, new key may be found
+on "https://worldweatheronline.com".
 To use new key, it has to be pasted into string "KEY" in class "AppStatics"
