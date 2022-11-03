@@ -23,6 +23,7 @@ public class AppStatics {
     public static final String EXIT_MESS = "Bye, hope to see you soon";
     public static final String MULTI_DAY = "For how many days do you want to know weather for?";
     public static final String KEY = "0c172e455111440c9ee114013221206";
+    public static final String Change = "I'm a teapot";
     public static final String WWO_API_URL = "http://api.worldweatheronline.com/premium/v1/weather.ashx?key=%s&q=%s&num_of_days=%d&tp=3&format=json";
 
 }

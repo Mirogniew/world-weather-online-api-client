@@ -11,7 +11,6 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 import static java.util.logging.Level.WARNING;
-import static kotlin.io.ConsoleKt.readLine;
 import static org.example.AppStatics.*;
 
 public class App {
