@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d34a3eb-27ea-4345-b408-12197e9b8c04" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5d34a3eb-27ea-4345-b408-12197e9b8c04" name="Changes" comment="Updated Access Key" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +26,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Feature_#4" />
+        <entry key="$PROJECT_DIR$" value="Feature#3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,7 +48,9 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gniew/Desktop/różne/tutekJS/tutek-nest&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -75,7 +75,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -93,6 +92,13 @@
       <workItem from="1655405433430" duration="2028000" />
       <workItem from="1655422379080" duration="6000" />
       <workItem from="1655471150873" duration="3602000" />
+      <workItem from="1655720649664" duration="771000" />
+      <workItem from="1656421103322" duration="271000" />
+      <workItem from="1656423463018" duration="586000" />
+      <workItem from="1666430185564" duration="277000" />
+      <workItem from="1666430476692" duration="3236000" />
+      <workItem from="1666874913389" duration="27000" />
+      <workItem from="1667488141944" duration="3214000" />
     </task>
     <task id="LOCAL-00001" summary="Issue #1 - Create Project Maven structure">
       <created>1655224270901</created>
@@ -150,7 +156,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655475534098</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="README fixed">
+      <created>1655720722416</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1655720722417</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updated Access Key">
+      <created>1667492533510</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667492533510</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +193,9 @@
     <MESSAGE value="Issue #3 - Implementation of WWO API response structure" />
     <MESSAGE value="Issue #4 - Create console MENU" />
     <MESSAGE value="README added" />
-    <option name="LAST_COMMIT_MESSAGE" value="README added" />
+    <MESSAGE value="README fixed" />
+    <MESSAGE value="Updated Access Key" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Access Key" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
